@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unique page title - My Site</title>
+<!--
+  <script type="module">
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styleindex.css') }}" media="screen">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="quote-button">
+    <a class="button-primary" href="{{url_for('quotes')}}">Add a quote</a>
+  </nav>
+  <br>
+
+  <div class="container theme-showcase" role="main">
+    <div class="Title">
+      <h1>Favorite Quotes</h1>
+    </div>
+    <!-- For loop starts, add inheritance at some later time -->
+    {% for r in result %}
+    <div class="quote-author">
+      <h1>{{r.author}}</h1>
+    </div>
+    <div class="quote-quote">
+      <h1>{{r.quote}}</h1>
+    </div>
+    {% endfor %}
+  </div>
+</body>
+</html>

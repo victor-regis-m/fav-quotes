@@ -1,0 +1,47 @@
+.quote-button{
+  margin-top: 25px;
+  margin-left:45px;
+  color:white;
+}
+
+.quote-button a:link{
+  color: white;
+  text-decoration-line: none;
+}
+.quote-button a{
+  background: #0aa1c7;
+  padding: 12px 10px;
+  border-radius: 0.5em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.Title{
+  color:#fff;
+  background-color: orange;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  height: 6em;
+  padding-top: 2.5em;
+  font-size: 28px;
+}
+
+.quote-author{
+  color: #fff;
+  background-color: blue;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.quote-quote{
+  color: #fff;
+  font-size: 28px;
+  background-color: green;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}

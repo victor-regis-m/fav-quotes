@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <title>Unique page title - My Site</title>
+<!--
+  <script type="module">
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/stylequote.css') }}" media="screen">
+</head>
+
+<body>
+  <div class="container">
+    <form action="process" method="post">
+      <div class="form-group">
+        <label for="author">Quote Author</label>
+        <br>
+        <input type="text" id="inputName" class="formControl" name="author" placeholder="Add quote author here">
+      </div>
+      <div class="form-group">
+        <label for="quote">Quote</label>
+        <br>
+        <textarea class="formControl" rows="5" id="quote" name = "quote" placeholder="Add your quote here"></textarea>
+      </div>
+      <button type="submit" class="button">Submit your quote</button>
+    </form>
+  </div>
+</body>
+</html>
