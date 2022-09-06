@@ -32,16 +32,17 @@
   background-color: blue;
   width: 80%;
   margin: auto;
-  text-align: center;
+  text-align: left;
+  font-size: 20px;
   font-family: 'Open Sans', sans-serif;
 }
 
 .quote-quote{
   color: #fff;
-  font-size: 28px;
+  font-size: 16px;
   background-color: green;
   width: 80%;
   margin: auto;
-  text-align: center;
+  text-align: left;
   font-family: 'Open Sans', sans-serif;
 }
